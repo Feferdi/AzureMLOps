@@ -13,12 +13,12 @@ from typing import Tuple, List
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+# Azure packages
 from azureml.core.run import Run
 from azureml.core.model import Model
 
 run = Run.get_context()
-
+# Loading data
 print("Loading training data...")
 # https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html
 diabetes = pd.read_csv('./workspaceblobstore/diabetes/diabetes.csv')
